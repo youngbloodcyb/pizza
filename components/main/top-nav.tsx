@@ -6,8 +6,10 @@ export function TopNav() {
     <nav className="bg-[#c0c0c0] border-b-2 border-[#dfdfdf] shadow-[inset_-1px_-1px_#0a0a0a,inset_1px_1px_#ffffff] p-1 font-sans">
       <div className="flex items-center justify-between space-x-1">
         <div className="flex items-center space-x-1">
-          <Image src="/logo.png" alt="Logo" width={32} height={32} />
-          <span className="text-sm">Down with Big Pizza</span>
+          {/* <Image src="/logo.png" alt="Logo" width={32} height={32} /> */}
+          <span className="text-lg uppercase font-bold">
+            Down with Big Pizza
+          </span>
         </div>
         <ul className="flex flex-wrap items-center space-x-1 text-sm">
           <NavItem href="/" label="File" />
