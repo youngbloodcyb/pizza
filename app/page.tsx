@@ -6,7 +6,8 @@ import Image from "next/image";
 import { PapaJohn } from "@/components/main/papa-john";
 
 const content = {
-  marqueeMessage: "Join the revolution. Down with Big Pizza!",
+  marqueeMessage:
+    "PIZZA TO THE PEOPLE! LEGALIZE MARINARA! DOWN WITH BIG PIZZA!",
 };
 
 export default function Home() {
