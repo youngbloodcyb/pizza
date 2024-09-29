@@ -11,11 +11,11 @@ export function TopNav() {
             Down with Big Pizza
           </span>
         </div>
-        <ul className="flex flex-wrap items-center space-x-1 text-sm">
-          <NavItem href="/" label="File" />
-          <NavItem href="/edit" label="Edit" />
-          <NavItem href="/view" label="View" />
-          <NavItem href="/help" label="Help" />
+        <ul className="flex-wrap items-center space-x-1 text-sm hidden md:flex">
+          <NavItem href="/" label="Manifesto" />
+          <NavItem href="/" label="Activism" />
+          <NavItem href="/" label="Join" />
+          <NavItem href="/" label="Share" />
         </ul>
       </div>
     </nav>
