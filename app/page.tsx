@@ -20,7 +20,7 @@ export default function Home() {
         <Container className="flex flex-col items-center justify-center font-bold font-mono">
           <p>Grease of giants drips,</p>
           <p>Local pies rise with fresh hope–</p>
-          <p>Taste rebellion's slice.</p>
+          <p>Taste rebellion&apos;s slice.</p>
         </Container>
       </Section>
       {/* <Pizza /> */}
