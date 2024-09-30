@@ -55,7 +55,7 @@ export const signUp = actionClient
       httpOnly: true,
     });
 
-    // redirect("/dashboard");
+    redirect("/");
   });
 
 export async function logout() {

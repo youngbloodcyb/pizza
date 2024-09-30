@@ -7,6 +7,6 @@ export function getSession() {
     return null;
   }
 
-  const { model } = JSON.parse(cookie.value);
+  const { model }: { model: Session } = JSON.parse(cookie.value);
   return model;
 }

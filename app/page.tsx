@@ -4,6 +4,7 @@ import { Pizza } from "@/components/main/3d-pizza";
 import { TopNav } from "@/components/main/top-nav";
 import Image from "next/image";
 import { PapaJohn } from "@/components/main/papa-john";
+import { getSession } from "@/lib/helpers/session";
 
 const content = {
   marqueeMessage:
@@ -11,10 +12,12 @@ const content = {
 };
 
 export default function Home() {
+  const session = getSession();
+
   return (
     <Main>
       <TopBar message={content.marqueeMessage} />
-      <TopNav />
+      <TopNav session={session} />
       <PapaJohn />
       <Section>
         <Container className="flex flex-col items-center justify-center font-bold font-mono">

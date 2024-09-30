@@ -39,6 +39,7 @@ export function SignUp() {
       toast.success("Sign up successful");
     },
     onError: ({ error }) => {
+      console.log(error);
       toast.error(parseActionError(error));
     },
   });
@@ -92,6 +93,7 @@ export function SignUp() {
               }
               setShowAlert(false);
               execute(values);
+              form.reset();
             })}
             className="p-4 space-y-4"
           >
@@ -170,7 +172,8 @@ export function SignUp() {
             />
             <Button
               type="submit"
-              className="bg-[#c0c0c0] border-2 border-black shadow-[2px_2px_0px_0px_rgba(255,255,255,1)_inset,_-2px_-2px_0px_0px_rgba(0,0,0,0.25)_inset]"
+              className="hover:bg-[#c0c0c0] border-2 border-black shadow-[2px_2px_0px_0px_rgba(255,255,255,1)_inset,_-2px_-2px_0px_0px_rgba(0,0,0,0.25)_inset]"
+              loading={isExecuting}
             >
               Sign Up
             </Button>
@@ -188,8 +191,7 @@ export function SignUp() {
             <div className="mt-4 flex justify-end">
               <Button
                 onClick={() => setShowAlert(false)}
-                className="bg-[#c0c0c0] border-2 border-black shadow-[2px_2px_0px_0px_rgba(255,255,255,1)_inset,_-2px_-2px_0px_0px_rgba(0,0,0,0.25)_inset]"
-                loading={isExecuting}
+                className="border-2 border-black shadow-[2px_2px_0px_0px_rgba(255,255,255,1)_inset,_-2px_-2px_0px_0px_rgba(0,0,0,0.25)_inset]"
               >
                 OK
               </Button>

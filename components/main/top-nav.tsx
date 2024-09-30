@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export function TopNav() {
+export function TopNav({ session }: { session: Session | null }) {
   return (
     <nav className="bg-[#c0c0c0] border-b-2 border-[#dfdfdf] shadow-[inset_-1px_-1px_#0a0a0a,inset_1px_1px_#ffffff] p-1 font-sans">
       <div className="flex items-center justify-between space-x-1">
@@ -9,6 +9,11 @@ export function TopNav() {
           {/* <Image src="/logo.png" alt="Logo" width={32} height={32} /> */}
           <span className="text-lg uppercase font-bold">
             Down with Big Pizza
+          </span>
+          <span className="text-sm font-mono">
+            {session
+              ? `Welcome, ${session.username}`
+              : "Sign in to make an impact"}
           </span>
         </div>
         <ul className="flex-wrap items-center space-x-1 text-sm hidden md:flex">
