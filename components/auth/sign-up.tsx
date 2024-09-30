@@ -39,19 +39,9 @@ export function SignUp() {
       toast.success("Sign up successful");
     },
     onError: ({ error }) => {
-      console.log(error);
       toast.error(parseActionError(error));
     },
   });
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    if (values.password !== values.passwordConfirm) {
-      setShowAlert(true);
-      return;
-    }
-    setShowAlert(false);
-    console.log(values);
-  }
 
   return (
     <>
@@ -93,7 +83,7 @@ export function SignUp() {
               }
               setShowAlert(false);
               execute(values);
-              form.reset();
+              //   form.reset();
             })}
             className="p-4 space-y-4"
           >

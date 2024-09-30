@@ -32,13 +32,19 @@ export const signUp = actionClient
   .action(async ({ parsedInput: { email, password, username } }) => {
     const pb = new PocketBase(process.env.POCKETBASE_URL);
 
-    // create a new user record in PocketBase
-    const user = await pb.collection("users").create({
-      username,
-      email,
-      password,
-      passwordConfirm: password,
-    });
+    let user;
+    try {
+      user = await pb.collection("users").create({
+        username,
+        email,
+        password,
+        passwordConfirm: password,
+      });
+    } catch (error) {
+      throw new Error("Username or email already exists");
+    }
+
+    console.log(user);
 
     // authenticate the newly created user
     const { token, record: model } = await pb
