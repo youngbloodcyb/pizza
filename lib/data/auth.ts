@@ -4,16 +4,16 @@ import { redirect } from "next/navigation";
 import PocketBase from "pocketbase";
 import { cookies } from "next/headers";
 import { actionClient } from "./safe-action";
-import { LoginSchema, SignUpSchema } from "./validations";
+import { SignInSchema, SignUpSchema } from "./validations";
 
-export const login = actionClient
-  .schema(LoginSchema)
-  .action(async ({ parsedInput: { email, password } }) => {
+export const signIn = actionClient
+  .schema(SignInSchema)
+  .action(async ({ parsedInput: { username, password } }) => {
     const pb = new PocketBase(process.env.POCKETBASE_URL);
 
     const { token, record: model } = await pb
       .collection("users")
-      .authWithPassword(email, password);
+      .authWithPassword(username, password);
 
     const cookie = JSON.stringify({ token, model });
 
