@@ -27,8 +27,8 @@ export const login = actionClient
     redirect("/dashboard");
   });
 
-export const signup = actionClient
-  .schema(SignUpSchema) // validation schema for sign-up
+export const signUp = actionClient
+  .schema(SignUpSchema)
   .action(async ({ parsedInput: { email, password, username } }) => {
     const pb = new PocketBase(process.env.POCKETBASE_URL);
 

@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { signUp } from "@/lib/data/auth";
 
 export function SignUp() {
   const [showAlert, setShowAlert] = useState(false);
