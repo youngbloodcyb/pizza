@@ -2,7 +2,7 @@ import {
   createSafeActionClient,
   DEFAULT_SERVER_ERROR_MESSAGE,
 } from "next-safe-action";
-import { cookies } from "next/headers";
+import { getSession } from "@/lib/helpers/session";
 
 class ActionError extends Error {}
 
@@ -27,17 +27,15 @@ export const actionClient = createSafeActionClient({
  * @returns {Promise<void>} A promise that resolves when the action is executed.
  * @throws {Error} If the user is not authenticated or the user ID is not available.
  */
-export const authenticatedAction = actionClient.use(async ({ next }) => {
-  const cookie = cookies().get("pb_auth");
+// export const authenticatedAction = actionClient.use(async ({ next }) => {
+//   const model = getSession();
 
-  if (!cookie) {
-    throw new Error("Not authenticated");
-  }
+//   if (!model) {
+//     throw new Error("Not authenticated");
+//   }
 
-  const { model } = JSON.parse(cookie.value);
-
-  return next({ ctx: { model } });
-});
+//   return next({ ctx: { model } });
+// });
 
 /**
  * Parses the action error object and returns a formatted error message.
