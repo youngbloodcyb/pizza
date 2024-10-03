@@ -17,7 +17,7 @@ export function TopNav({ session }: { session: Session | null }) {
           </span>
         </div>
         <ul className="flex-wrap items-center space-x-1 text-sm hidden md:flex">
-          <NavItem href="/" label="Manifesto" />
+          <NavItem href="/manifesto" label="Manifesto" />
           <NavItem href="/" label="Activism" />
           <NavItem href="/" label="Join" />
           <NavItem href="/" label="Share" />

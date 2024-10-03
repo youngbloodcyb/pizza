@@ -5,7 +5,6 @@ import { TopNav } from "@/components/main/top-nav";
 import Image from "next/image";
 import { PapaJohn } from "@/components/main/papa-john";
 import { getSession } from "@/lib/helpers/session";
-
 const content = {
   marqueeMessage:
     "PIZZA TO THE PEOPLE! LEGALIZE MARINARA! DOWN WITH BIG PIZZA!",
