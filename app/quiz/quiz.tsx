@@ -11,7 +11,7 @@ const quizData = [
     answers: [
       { name: "At least once in my life", value: "sympathizer" },
       { name: "Every night", value: "sympathizer" },
-      { name: "What the hell is a domino?", value: "neutral" },
+      { name: "You're telling me a domino made this pizza?", value: "neutral" },
       { name: "I would never", value: "ally" },
     ],
   },
@@ -298,7 +298,7 @@ export function Quiz() {
     const maxCount = Math.max(sympathizerCount, allyCount, neutralCount);
 
     if (maxCount === sympathizerCount) {
-      return "You're a Big Pizza Sympathizer and a major loser. You better get off this site in the next 30 seconds or we'll beat the hell out of you.";
+      return "You're a Big Pizza Sympathizer and a major loser. You better get off this site in the next 30 seconds or we'll beat the h*ck out of you.";
     } else if (maxCount === allyCount) {
       return "Congrats! You're an Anti-Big Pizza Ally! Join the movement and fight the good fight.";
     } else {
