@@ -1,8 +1,6 @@
 import { Section, Container, Main } from "@/components/craft";
 import { TopBar } from "@/components/main/top-bar";
-import { Pizza } from "@/components/main/3d-pizza";
 import { TopNav } from "@/components/main/top-nav";
-import Image from "next/image";
 import { PapaJohn } from "@/components/main/papa-john";
 import { getSession } from "@/lib/helpers/session";
 import { Suspense } from "react";

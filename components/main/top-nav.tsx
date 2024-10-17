@@ -7,20 +7,20 @@ export function TopNav({ session }: { session: Session | null }) {
       <div className="flex items-center justify-between space-x-1">
         <div className="flex items-center space-x-1">
           {/* <Image src="/logo.png" alt="Logo" width={32} height={32} /> */}
-          <span className="text-lg uppercase font-bold">
-            Down with Big Pizza
-          </span>
-          <span className="text-sm font-mono">
+          <Link href="/">
+            <span className="text-lg uppercase font-bold">D.W.B.P.</span>
+          </Link>
+          {/* <span className="text-sm font-mono">
             {session
               ? `Welcome, ${session.username}`
               : "Sign in to make an impact"}
-          </span>
+          </span> */}
         </div>
         <ul className="flex-wrap items-center space-x-1 text-sm hidden md:flex">
           <NavItem href="/manifesto" label="Manifesto" />
-          <NavItem href="/" label="Activism" />
+          <NavItem href="/quiz" label="Exam" />
           <NavItem href="/" label="Join" />
-          <NavItem href="/" label="Share" />
+          {/* <NavItem href="/" label="Share" /> */}
         </ul>
       </div>
     </nav>

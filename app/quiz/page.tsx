@@ -16,7 +16,12 @@ export default function Home() {
       <TopBar message={content.marqueeMessage} />
       <TopNav session={session} />
       <Section className="flex justify-center">
-        <Quiz />
+        <Container className="space-y-4">
+          <h1 className="text-center">
+            Find out your pizza political party through this exam
+          </h1>
+          <Quiz />
+        </Container>
       </Section>
       {/* <Pizza /> */}
     </Main>
