@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 // Quiz data stored in a JSON array with the new structure
 const quizData = [
@@ -307,12 +306,12 @@ export function Quiz() {
   };
 
   return (
-    <div className="w-full max-w-lg bg-[#c0c0c0] border-t-2 border-l-2 border-[#ffffff] border-r-2 border-b-2 border-r-[#808080] border-b-[#808080] p-1">
+    <div className="w-full bg-[#c0c0c0] border-t-2 border-l-2 border-[#ffffff] border-r-2 border-b-2 border-r-[#808080] border-b-[#808080] p-1">
       <div className="bg-[#000080] text-white p-1 mb-2 flex justify-between items-center">
-        <span className="font-bold">Pizza Political-stance Quiz</span>
-        <button className="w-5 h-5 bg-[#c0c0c0] border border-[#ffffff] border-r-[#808080] border-b-[#808080] flex items-center justify-center text-black font-bold">
+        <span className="font-bold">pizza_party_examination</span>
+        <div className="w-5 h-5 bg-[#c0c0c0] border border-[#ffffff] border-r-[#808080] border-b-[#808080] flex items-center justify-center text-black font-bold">
           X
-        </button>
+        </div>
       </div>
       <div className="p-4">
         {!quizCompleted ? (

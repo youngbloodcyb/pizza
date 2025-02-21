@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="px-8 py-4 space-y-12">
+    <div className="space-y-12">
       <div className="space-y-2">
         <div>
           <h1 className="text-xl pb-2 font-bold">We have lots of work to do</h1>

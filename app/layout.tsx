@@ -26,7 +26,7 @@ export default function RootLayout({
         <TopBar message={content.marqueeMessage} />
         <Main className="grid grid-cols-4 h-full pt-8">
           <SideBar />
-          <div className="col-span-3">{children}</div>
+          <div className="col-span-3 px-8 py-4">{children}</div>
         </Main>
         <Toaster />
       </body>
