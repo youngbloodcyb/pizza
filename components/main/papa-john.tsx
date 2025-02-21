@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function PapaJohn() {
   return (
-    <div className="animate-grow">
+    <div className="hidden md:block animate-grow">
       <Image src="/flames.gif" alt="Flames" width={100} height={100} />
       <Image src="/papajohn.png" alt="Papa John" width={100} height={100} />
       {/* GROWING ANIMATION */}
