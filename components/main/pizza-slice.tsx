@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import React, { useRef } from 'react';
-import { Canvas, useFrame, useLoader } from '@react-three/fiber';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import * as THREE from 'three';
+import React, { useRef } from "react";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import * as THREE from "three";
 
 function RotatingPizzaSlice() {
-  const gltf = useLoader(GLTFLoader, '/pizza-slice.glb');
+  const gltf = useLoader(GLTFLoader, "/pizza-slice.glb");
   const meshRef = useRef<THREE.Group>();
 
   useFrame(() => {
@@ -37,12 +37,14 @@ function RotatingPizzaSlice() {
 
 export function PizzaSlice() {
   return (
-    <Canvas camera={{ position: [0, 0, 2], fov: 75 }}>
-      <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} intensity={1} />
-      <pointLight position={[-10, -10, -10]} intensity={0.5} />
-      <directionalLight position={[0, 5, 5]} intensity={0.5} />
-      <RotatingPizzaSlice />
-    </Canvas>
+    <div className="w-16 h-16">
+      <Canvas camera={{ position: [0, 0, 2], fov: 75 }}>
+        <ambientLight intensity={0.5} />
+        <pointLight position={[10, 10, 10]} intensity={1} />
+        <pointLight position={[-10, -10, -10]} intensity={0.5} />
+        <directionalLight position={[0, 5, 5]} intensity={0.5} />
+        <RotatingPizzaSlice />
+      </Canvas>
+    </div>
   );
 }

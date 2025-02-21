@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { TopBar } from "@/components/main/top-bar";
+import { SideBar } from "@/components/main/side-bar";
+import { Main } from "@/components/craft";
 
 export const metadata: Metadata = {
   title: "Down With Big Pizza",
   description: "Pizza to the people! Legalize Marinara! Join the rebellion!",
+};
+
+const content = {
+  marqueeMessage:
+    "PIZZA TO THE PEOPLE! LEGALIZE MARINARA! DOWN WITH BIG PIZZA!",
 };
 
 export default function RootLayout({
@@ -26,10 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background bg-[#008080]`}
-      >
-        {children}
+      <body className="antialiased font-mono bg-background bg-[#008080] h-screen">
+        <TopBar message={content.marqueeMessage} />
+        <Main className="grid grid-cols-4 h-full pt-8">
+          <SideBar />
+          <div className="col-span-3">{children}</div>
+        </Main>
         <Toaster />
       </body>
     </html>

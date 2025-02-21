@@ -1,6 +1,6 @@
 import { Section, Container, Main } from "@/components/craft";
 import { TopBar } from "@/components/main/top-bar";
-import { TopNav } from "@/components/main/top-nav";
+import { TopNav } from "@/components/main/side-bar";
 import { getSession } from "@/lib/helpers/session";
 import { Quiz } from "./quiz";
 const content = {

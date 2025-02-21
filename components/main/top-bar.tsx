@@ -6,7 +6,7 @@ interface TopBarProps {
 
 export const TopBar: React.FC<TopBarProps> = ({ message }) => {
   return (
-    <div className="relative w-full overflow-hidden bg-yellow-400 py-2 font-mono">
+    <div className="absolute top-0 left-0 w-full overflow-hidden bg-yellow-400 py-2 font-mono">
       <div
         className="whitespace-nowrap"
         style={{

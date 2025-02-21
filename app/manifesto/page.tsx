@@ -1,7 +1,6 @@
 import { Section, Container, Main } from "@/components/craft";
 import { TopBar } from "@/components/main/top-bar";
 import { getSession } from "@/lib/helpers/session";
-import { TopNav } from "@/components/main/top-nav";
 import { PizzaSlice } from "@/components/main/pizza-slice";
 
 const content = {
@@ -14,9 +13,6 @@ export default function Manifesto() {
 
   return (
     <Main>
-      <TopBar message={content.marqueeMessage} />
-      <TopNav session={session} />
-
       <Section>
         <Container className="flex flex-col items-center font-bold font-mono max-w-2xl mx-auto">
           <div className="w-64 h-64 mb-8">
