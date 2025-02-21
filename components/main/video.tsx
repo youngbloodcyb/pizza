@@ -13,10 +13,10 @@ export async function VideoComponent({ fileName }: { fileName: string }) {
       <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white p-1 flex justify-between items-center">
         <span className="text-sm font-bold">propaganda.mp4</span>
         <div className="flex space-x-1">
-          <div className="w-4 h-4 bg-gray-300 border border-gray-500 text-black text-xs flex items-center justify-center">
+          <div className="hidden w-4 h-4 bg-gray-300 border border-gray-500 text-black text-xs md:flex items-center justify-center">
             _
           </div>
-          <div className="w-4 h-4 bg-gray-300 border border-gray-500 text-black text-xs flex items-center justify-center">
+          <div className="hidden w-4 h-4 bg-gray-300 border border-gray-500 text-black text-xs md:flex items-center justify-center">
             □
           </div>
           <div className="w-4 h-4 bg-gray-300 border border-gray-500 text-black text-xs flex items-center justify-center">
