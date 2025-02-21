@@ -20,7 +20,7 @@ export default function Manifesto() {
           plastic cheese, spits on that legacy. It&apos;s a soulless machine
           churning out mediocrity.
         </p>
-        <p className="text-2xl font-extrabold">We say H*CK NO.</p>
+        <p className="text-2xl font-extrabold">We say NO.</p>
         <p className="text-xl">
           Our call is clear: EAT LOCAL. SUPPORT THE PIZZA MASTERS.
         </p>

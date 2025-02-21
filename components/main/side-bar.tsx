@@ -28,7 +28,7 @@ export function SideBar() {
         </Link>
         <p>
           Grease of giants drips, Local pies rise with fresh hope– Taste
-          rebellion's slice.
+          rebellion&apos;s slice.
         </p>
         <Suspense fallback={<p>Loading propaganda...</p>}>
           <VideoComponent fileName="video/dwbpYT" />

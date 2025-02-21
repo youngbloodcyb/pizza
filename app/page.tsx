@@ -37,18 +37,18 @@ export default function Home() {
                 Pizza transcends borders. From the sun-drenched shores of Hawaii
                 to the icy grip of northern Sweden, from the cobblestone streets
                 of Naples to your own neighborhood – pizza reigns supreme. But
-                not all pizza is created equal. We're talking about the
+                not all pizza is created equal. We&apos;re talking about the
                 soul-stirring kind, crafted by hands calloused and weathered by
                 years of dedication.
               </p>
               <p>
-                Pizzaiolos who don't just toss dough, they breathe life into
-                tradition with every spin. Big pizza, with its cardboard crusts
-                and plastic cheese, spits on that legacy. It's a soulless
-                machine churning out mediocrity.
+                Pizzaiolos who don&apos;t just toss dough, they breathe life
+                into tradition with every spin. Big pizza, with its cardboard
+                crusts and plastic cheese, spits on that legacy. It&apos;s a
+                soulless machine churning out mediocrity.
               </p>
               <p>
-                We say H*CK NO. Our call is clear: EAT LOCAL. SUPPORT THE PIZZA
+                We say NO. Our call is clear: EAT LOCAL. SUPPORT THE PIZZA
                 MASTERS.
               </p>
               <p>
