@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="px-8 py-4 space-y-12">
@@ -57,10 +59,47 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <p>Papa John&apos;s</p>
+            <h3 className="font-bold">Prapy Jonh</h3>
+            <div className="text-sm space-y-2">
+              <p>
+                Pizza should be democratized, not overly commercialized.
+                It&apos;s about time we take back power from the pizza
+                oligarchy.
+              </p>
+              <Image
+                className="w-full"
+                src="/prapy.jpg"
+                alt="Papa John"
+                width={100}
+                height={100}
+              />
+              <p>Prapy Jonh must be stopped.</p>
+              <p className="italic">
+                &quot;Tyranny is always lurking at the doorstep of unchecked
+                power&quot;
+              </p>
+              <p className="indent-3">-George Mason</p>
+            </div>
           </div>
           <div>
-            <p>Papa John&apos;s</p>
+            <h3 className="font-bold">Conspiracy</h3>
+            <div className="text-sm space-y-2">
+              <Image
+                className="w-full"
+                src="/overrated.jpg"
+                alt="meme"
+                width={100}
+                height={100}
+              />
+              <p>
+                Big Pizza controls the marinara trade and falsely hikes prices
+                to snuff out competition.
+              </p>
+              <p>
+                We need more balance in the pizza economy. We are given the
+                illusion of choice but are being flooded by machine-made pizza.
+              </p>
+            </div>
           </div>
         </div>
       </div>

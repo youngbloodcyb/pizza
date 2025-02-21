@@ -1,16 +1,7 @@
 import { Section, Container, Main } from "@/components/craft";
-import { TopBar } from "@/components/main/top-bar";
-import { getSession } from "@/lib/helpers/session";
 import { PizzaSlice } from "@/components/main/pizza-slice";
 
-const content = {
-  marqueeMessage:
-    "BIG PIZZA IS BAD FOR YOU! LEGALIZE MARINARA! DOWN WITH BIG PIZZA!",
-};
-
 export default function Manifesto() {
-  const session = getSession();
-
   return (
     <Main>
       <Section>
