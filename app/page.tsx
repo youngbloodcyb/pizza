@@ -28,7 +28,7 @@ export default function Home() {
           <h2 className="text-xl pb-2 font-bold">Information</h2>
           <hr />
         </div>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-bold">Manifesto</h3>
             <div className="text-sm space-y-2">

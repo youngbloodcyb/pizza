@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased font-mono bg-background bg-[#008080] h-screen">
         <TopBar message={content.marqueeMessage} />
-        <Main className="grid grid-cols-4 h-full pt-8">
+        <Main className="flex flex-col md:grid md:grid-cols-4 h-full pt-8">
           <SideBar />
           <div className="col-span-3 px-8 py-4">{children}</div>
         </Main>
