@@ -4,6 +4,7 @@ import "./globals.css";
 import { TopBar } from "@/components/main/top-bar";
 import { SideBar } from "@/components/main/side-bar";
 import { Main } from "@/components/craft";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Down With Big Pizza",
@@ -29,6 +30,7 @@ export default function RootLayout({
           <div className="col-span-3 px-8 py-4">{children}</div>
         </Main>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
